@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tinder.ba", "Tinder.ba\Tinder.ba.csproj", "{D7FE046C-6489-407A-A3FA-7ECD6FA07844}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{06DBF3E1-0292-4917-A3A4-9399DDA78515}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{D7FE046C-6489-407A-A3FA-7ECD6FA07844}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7FE046C-6489-407A-A3FA-7ECD6FA07844}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7FE046C-6489-407A-A3FA-7ECD6FA07844}.Release|Any CPU.Build.0 = Release|Any CPU
-		{06DBF3E1-0292-4917-A3A4-9399DDA78515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{06DBF3E1-0292-4917-A3A4-9399DDA78515}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{06DBF3E1-0292-4917-A3A4-9399DDA78515}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{06DBF3E1-0292-4917-A3A4-9399DDA78515}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
