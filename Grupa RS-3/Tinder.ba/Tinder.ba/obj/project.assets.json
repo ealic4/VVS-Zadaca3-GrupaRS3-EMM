@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Ehlimana\\.nuget\\packages\\": {}
+    "C:\\Users\\Muhamed\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\D\\Ehlimana\\Documents\\VVS\\2020-2021\\Zadaća br. 3 (White Box Testiranje)\\Grupa RS-3\\Tinder.ba\\Tinder.ba\\Tinder.ba.csproj",
+      "projectUniqueName": "C:\\Users\\Muhamed\\source\\repos\\VVS-Zadaca3-GrupaRS3-EMM\\Grupa RS-3\\Tinder.ba\\Tinder.ba\\Tinder.ba.csproj",
       "projectName": "Tinder.ba",
-      "projectPath": "D:\\D\\Ehlimana\\Documents\\VVS\\2020-2021\\Zadaća br. 3 (White Box Testiranje)\\Grupa RS-3\\Tinder.ba\\Tinder.ba\\Tinder.ba.csproj",
-      "packagesPath": "C:\\Users\\Ehlimana\\.nuget\\packages\\",
-      "outputPath": "D:\\D\\Ehlimana\\Documents\\VVS\\2020-2021\\Zadaća br. 3 (White Box Testiranje)\\Grupa RS-3\\Tinder.ba\\Tinder.ba\\obj\\",
+      "projectPath": "C:\\Users\\Muhamed\\source\\repos\\VVS-Zadaca3-GrupaRS3-EMM\\Grupa RS-3\\Tinder.ba\\Tinder.ba\\Tinder.ba.csproj",
+      "packagesPath": "C:\\Users\\Muhamed\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Muhamed\\source\\repos\\VVS-Zadaca3-GrupaRS3-EMM\\Grupa RS-3\\Tinder.ba\\Tinder.ba\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ehlimana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Muhamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -32,6 +32,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -43,6 +44,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -58,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -44,6 +44,7 @@ namespace Tinder.ba
             if (opcija == 0)
             {
                 Korisnik postojeci = korisnici.Find(korisnik => korisnik.Ime == k.Ime);
+                postojeci=null;
                 if (postojeci != null)
                     throw new InvalidOperationException("Korisnik već postoji!");
 
@@ -95,37 +96,24 @@ namespace Tinder.ba
                 throw new Exception("Nema korisnika!");
 
             List<Tuple<Korisnik, Korisnik>> parovi = new List<Tuple<Korisnik, Korisnik>>();
-            
-            foreach(Korisnik prvi in korisnici)
-            {
-                foreach(Korisnik drugi in korisnici)
-                {
-                    bool postoji = false;
-                    if (prvi == drugi)
-                        postoji = true;
-                    foreach (Tuple<Korisnik, Korisnik> par in parovi)
-                    {
-                        if (par.Item1 == prvi && par.Item2 == drugi)
-                            postoji = true;
-                        else if (par.Item2 == prvi && par.Item1 == drugi)
-                            postoji = true;
-                    }
-                    if (!postoji)
-                    {
-                        if (prvi.ZeljenaLokacija == drugi.Lokacija && prvi.Lokacija == drugi.ZeljenaLokacija
-                            && prvi.Godine >= drugi.ZeljeniMinGodina && prvi.Godine <= drugi.ZeljeniMaxGodina
-                            && drugi.Godine >= prvi.ZeljeniMinGodina && drugi.Godine <= prvi.ZeljeniMaxGodina)
-                            parovi.Add(new Tuple<Korisnik, Korisnik>(prvi, drugi));
-                    }
-                }
-            }
-            List<Tuple<Korisnik, Korisnik>> paroviZaBrisanje = new List<Tuple<Korisnik, Korisnik>>();
-            foreach (Tuple<Korisnik, Korisnik> par in parovi)
-            {
-                if (par.Item1 == par.Item2)
-                    paroviZaBrisanje.Add(par);
-            }
 
+            for (int i = 0; i < korisnici.Count; i++)
+            {
+                Korisnik prvi = korisnici[i];
+                for (int j = i + 1; j < korisnici.Count; j++)
+                {
+
+
+                    Korisnik drugi = korisnici[j];
+
+                    if (prvi.ZeljenaLokacija == drugi.Lokacija && prvi.Lokacija == drugi.ZeljenaLokacija
+                        && prvi.Godine >= drugi.ZeljeniMinGodina && prvi.Godine <= drugi.ZeljeniMaxGodina
+                        && drugi.Godine >= prvi.ZeljeniMinGodina && drugi.Godine <= prvi.ZeljeniMaxGodina)
+                        parovi.Add(new Tuple<Korisnik, Korisnik>(prvi, drugi));
+                }
+
+            }
+            
             return parovi;
         }
 
